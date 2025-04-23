@@ -1,0 +1,786 @@
+question_concept,Major Concepts,count
+person,Society & Culture,35
+people,Society & Culture,23
+animals,Nature & Environment,8
+child,Society & Culture,8
+cat,Nature & Environment,7
+snake,Nature & Environment,6
+weasel,Nature & Environment,6
+food,Food & Drink,6
+committing murder,Society & Culture,5
+dogs,Nature & Environment,5
+human,Society & Culture,5
+anemone,Nature & Environment,5
+fox,Nature & Environment,5
+buying products,Human Activities & Daily Life,5
+competing,Sports & Physical Activities,5
+boredom,Emotions & Mental States,5
+dog,Nature & Environment,5
+car,Technology & Media,5
+bald eagle,Nature & Environment,5
+potato,Food & Drink,5
+crab,Nature & Environment,5
+apple tree,Nature & Environment,5
+cup of coffee,Food & Drink,4
+children,Society & Culture,4
+beer,Food & Drink,4
+having fun,Human Activities & Daily Life,4
+going to bed,Human Activities & Daily Life,4
+talking to,Human Activities & Daily Life,4
+blowfish,Nature & Environment,4
+monkey,Nature & Environment,4
+book,Objects & Tools,4
+eating hamburger,Human Activities & Daily Life,4
+kissing,Human Activities & Daily Life,4
+applying for job,Human Activities & Daily Life,4
+water,Food & Drink,4
+music,Technology & Media,4
+lizard,Nature & Environment,4
+wood,Nature & Environment,4
+run,Sports & Physical Activities,4
+surprising,Emotions & Mental States,3
+killing people,Society & Culture,3
+carpet,Objects & Tools,3
+niece,Society & Culture,3
+grape,Food & Drink,3
+learning about world,Abstract Concepts & Events,3
+mental illness,Abstract Concepts & Events,3
+riding bike,Human Activities & Daily Life,3
+furniture,Objects & Tools,3
+sun,Nature & Environment,3
+landing,Human Activities & Daily Life,3
+having bath,Human Activities & Daily Life,3
+driving car,Human Activities & Daily Life,3
+living,Abstract Concepts & Events,3
+anger,Emotions & Mental States,3
+marmot,Nature & Environment,3
+death,Abstract Concepts & Events,3
+bird,Nature & Environment,3
+pail,Objects & Tools,3
+performing,Technology & Media,3
+playing baseball,Sports & Physical Activities,3
+dying,Abstract Concepts & Events,3
+light source,Objects & Tools,3
+attending school,Human Activities & Daily Life,3
+computer,Technology & Media,3
+sheep,Nature & Environment,3
+jeans,Objects & Tools,3
+government,Society & Culture,3
+rise,Abstract Concepts & Events,3
+airplanes,Technology & Media,3
+shark,Nature & Environment,3
+communicating,Human Activities & Daily Life,3
+everyone,Society & Culture,3
+information,Technology & Media,3
+ferret,Nature & Environment,3
+buying beer,Human Activities & Daily Life,3
+shelf,Objects & Tools,3
+giving assistance,Human Activities & Daily Life,3
+animal,Nature & Environment,3
+committing perjury,Society & Culture,3
+ficus,Nature & Environment,3
+toilet,Buildings & Spaces,3
+sitting quietly,Human Activities & Daily Life,3
+audience,Society & Culture,3
+heifer,Nature & Environment,3
+reading newspaper,Human Activities & Daily Life,3
+bottle,Objects & Tools,2
+becoming inebriated,Human Activities & Daily Life,2
+stove,Food & Drink,2
+office,Buildings & Spaces,2
+fan,Objects & Tools,2
+letter,Objects & Tools,2
+soap,Objects & Tools,2
+hostess,Society & Culture,2
+metal,Nature & Environment,2
+pizza,Food & Drink,2
+stones,Nature & Environment,2
+baby,Society & Culture,2
+reduce,Abstract Concepts & Events,2
+dressing room,Buildings & Spaces,2
+going to work,Human Activities & Daily Life,2
+sex,Abstract Concepts & Events,2
+energy,Abstract Concepts & Events,2
+doing housework,Human Activities & Daily Life,2
+talking,Human Activities & Daily Life,2
+string,Objects & Tools,2
+hose,Objects & Tools,2
+going to play,Human Activities & Daily Life,2
+mezzanine,Buildings & Spaces,2
+fortune,Abstract Concepts & Events,2
+planet,Nature & Environment,2
+knitting,Human Activities & Daily Life,2
+table,Objects & Tools,2
+eat,Human Activities & Daily Life,2
+paper,Objects & Tools,2
+standing in queue,Human Activities & Daily Life,2
+creek,Nature & Environment,2
+playing basketball,Sports & Physical Activities,2
+exercising,Human Activities & Daily Life,2
+finding information,Technology & Media,2
+auditorium,Buildings & Spaces,2
+mat,Objects & Tools,2
+bee,Nature & Environment,2
+stopping being married to,Abstract Concepts & Events,2
+mouse,Nature & Environment,2
+cup,Objects & Tools,2
+having food,Food & Drink,2
+express information,Technology & Media,2
+god,Society & Culture,2
+getting in shape,Sports & Physical Activities,2
+disease,Abstract Concepts & Events,2
+making friends,Human Activities & Daily Life,2
+bell,Objects & Tools,2
+steakhouse,Food & Drink,2
+pamphlets,Objects & Tools,2
+spiders,Nature & Environment,2
+dust,Nature & Environment,2
+exercise,Sports & Physical Activities,2
+small dog,Nature & Environment,2
+seaweed,Nature & Environment,2
+gazelle,Nature & Environment,2
+books,Objects & Tools,2
+trash can,Objects & Tools,2
+sky,Nature & Environment,2
+answering questions,Human Activities & Daily Life,2
+kill,Society & Culture,2
+electricity,Technology & Media,2
+writing instrument,Objects & Tools,2
+ink,Objects & Tools,2
+map,Objects & Tools,2
+birds,Nature & Environment,2
+newspaper,Objects & Tools,2
+bungalow,Buildings & Spaces,2
+bathroom,Buildings & Spaces,2
+love,Abstract Concepts & Events,2
+restaurant,Food & Drink,2
+free,Abstract Concepts & Events,2
+die,Abstract Concepts & Events,2
+dictionary,Objects & Tools,2
+briefcase,Objects & Tools,2
+mound,Nature & Environment,2
+judging,Emotions & Mental States,2
+see new,Abstract Concepts & Events,2
+stapler,Objects & Tools,2
+seat,Objects & Tools,2
+flowers,Nature & Environment,2
+house,Buildings & Spaces,2
+fruit,Food & Drink,2
+getting,Human Activities & Daily Life,2
+control room,Buildings & Spaces,2
+have fun,Emotions & Mental States,2
+musical instrument,Technology & Media,2
+lake,Nature & Environment,2
+earth,Nature & Environment,2
+hearing testimony,Society & Culture,2
+waiting for,Human Activities & Daily Life,2
+most people,Society & Culture,2
+key,Objects & Tools,2
+japanese restaurant,Food & Drink,2
+dirt,Nature & Environment,2
+going to party,Human Activities & Daily Life,2
+friends,Society & Culture,2
+stabbing to death,Society & Culture,2
+shower curtain,Objects & Tools,2
+police officer,Society & Culture,2
+plants,Nature & Environment,2
+balalaika,Technology & Media,2
+helping,Human Activities & Daily Life,2
+fire extinguisher,Objects & Tools,2
+going fishing,Human Activities & Daily Life,2
+computers,Technology & Media,2
+magazines,Technology & Media,2
+brownstone,Buildings & Spaces,2
+hamburger,Food & Drink,2
+upright piano,Technology & Media,2
+ottoman,Objects & Tools,2
+obstructing justice,Society & Culture,2
+glue stick,Objects & Tools,2
+fail,Abstract Concepts & Events,2
+settle,Abstract Concepts & Events,2
+curiosity,Emotions & Mental States,2
+fun,Emotions & Mental States,2
+cave,Nature & Environment,2
+beginning work,Human Activities & Daily Life,2
+revolving door,Buildings & Spaces,2
+telephone book,Objects & Tools,2
+kitten,Nature & Environment,2
+program,Technology & Media,2
+bar,Food & Drink,2
+stranger,Society & Culture,2
+computer user,Technology & Media,2
+bench,Objects & Tools,2
+picture,Objects & Tools,2
+releasing energy,Abstract Concepts & Events,2
+professors,Society & Culture,2
+copulating,Abstract Concepts & Events,2
+shop,Buildings & Spaces,2
+rest,Human Activities & Daily Life,2
+clothing,Objects & Tools,2
+running,Sports & Physical Activities,2
+rosebush,Nature & Environment,2
+gentleman,Society & Culture,2
+watching film,Human Activities & Daily Life,2
+courtyard,Buildings & Spaces,2
+wind instrument,Technology & Media,2
+triangle,Objects & Tools,2
+anybody,Society & Culture,2
+mice,Nature & Environment,2
+farmland,Nature & Environment,2
+awaking,Human Activities & Daily Life,2
+supermarket,Buildings & Spaces,2
+remembering,Emotions & Mental States,2
+happy,Emotions & Mental States,1
+baseball stadium,Sports & Physical Activities,1
+hiking,Sports & Physical Activities,1
+plant,Nature & Environment,1
+sports equipment,Sports & Physical Activities,1
+using television,Human Activities & Daily Life,1
+kite,Objects & Tools,1
+relax,Human Activities & Daily Life,1
+wreck,Abstract Concepts & Events,1
+wristwatch,Objects & Tools,1
+rats,Nature & Environment,1
+handle,Objects & Tools,1
+pebble,Nature & Environment,1
+pretending,Emotions & Mental States,1
+plate,Objects & Tools,1
+drill,Objects & Tools,1
+lantern,Objects & Tools,1
+louisiana,Buildings & Spaces,1
+horse,Nature & Environment,1
+snowflake,Nature & Environment,1
+light,Emotions & Mental States,1
+shopping bag,Objects & Tools,1
+eating lunch,Human Activities & Daily Life,1
+launch platform,Buildings & Spaces,1
+eating,Food & Drink,1
+section,Buildings & Spaces,1
+clothes,Objects & Tools,1
+seeing idea become reality,Abstract Concepts & Events,1
+mercury,Nature & Environment,1
+singers,Society & Culture,1
+elevation,Nature & Environment,1
+place to stay,Buildings & Spaces,1
+running twenty six miles,Sports & Physical Activities,1
+umbrella,Objects & Tools,1
+mosquitoes,Nature & Environment,1
+crowd,Society & Culture,1
+large container,Objects & Tools,1
+knowledge,Abstract Concepts & Events,1
+capital,Abstract Concepts & Events,1
+beautiful,Abstract Concepts & Events,1
+go off strike,Abstract Concepts & Events,1
+contemplate,Emotions & Mental States,1
+general store,Buildings & Spaces,1
+losing weight,Sports & Physical Activities,1
+turkey,Nature & Environment,1
+ground floor,Buildings & Spaces,1
+straight,Emotions & Mental States,1
+bucket,Objects & Tools,1
+traveling,Human Activities & Daily Life,1
+connection,Abstract Concepts & Events,1
+band,Society & Culture,1
+chatting with friends,Human Activities & Daily Life,1
+wheat,Food & Drink,1
+satchel,Objects & Tools,1
+nylon,Objects & Tools,1
+communicate,Technology & Media,1
+running after ball,Sports & Physical Activities,1
+day,Abstract Concepts & Events,1
+place to eat,Food & Drink,1
+walking,Sports & Physical Activities,1
+reproducing,Abstract Concepts & Events,1
+liquid,Food & Drink,1
+timid,Emotions & Mental States,1
+speakers,Technology & Media,1
+kosher restaurant,Food & Drink,1
+knives,Objects & Tools,1
+thinking,Emotions & Mental States,1
+bare,Emotions & Mental States,1
+field,Nature & Environment,1
+climb,Sports & Physical Activities,1
+pond,Nature & Environment,1
+tweed,Objects & Tools,1
+showroom,Buildings & Spaces,1
+mexican restaurant,Food & Drink,1
+eating breakfast,Human Activities & Daily Life,1
+flat,Buildings & Spaces,1
+chest,Objects & Tools,1
+build,Abstract Concepts & Events,1
+parents,Society & Culture,1
+fiddling,Human Activities & Daily Life,1
+flirt,Human Activities & Daily Life,1
+channel,Technology & Media,1
+prisoner,Society & Culture,1
+honey,Food & Drink,1
+roadway,Buildings & Spaces,1
+interest,Emotions & Mental States,1
+jellyfish,Nature & Environment,1
+meteor,Nature & Environment,1
+lens,Objects & Tools,1
+magazine,Technology & Media,1
+hot day,Nature & Environment,1
+junk,Objects & Tools,1
+grass,Nature & Environment,1
+religion,Society & Culture,1
+universe,Abstract Concepts & Events,1
+stone,Nature & Environment,1
+pens,Objects & Tools,1
+superhighway,Buildings & Spaces,1
+toothpick,Objects & Tools,1
+ticket booth,Buildings & Spaces,1
+foreword,Objects & Tools,1
+fly in airplane,Human Activities & Daily Life,1
+driving,Human Activities & Daily Life,1
+smoke,Abstract Concepts & Events,1
+going into trance,Emotions & Mental States,1
+rainy day,Nature & Environment,1
+elevate,Abstract Concepts & Events,1
+side chair,Objects & Tools,1
+thoroughfare,Buildings & Spaces,1
+manchester,Buildings & Spaces,1
+lawyers,Society & Culture,1
+chain,Objects & Tools,1
+knight,Society & Culture,1
+cottage,Buildings & Spaces,1
+chair,Objects & Tools,1
+homeowner,Society & Culture,1
+drug,Abstract Concepts & Events,1
+duffel bag,Objects & Tools,1
+bad,Emotions & Mental States,1
+hike,Sports & Physical Activities,1
+nature,Nature & Environment,1
+swamp,Nature & Environment,1
+going to sleep,Human Activities & Daily Life,1
+seats,Objects & Tools,1
+container can,Objects & Tools,1
+mammoth,Nature & Environment,1
+automobile,Technology & Media,1
+driving to work,Human Activities & Daily Life,1
+playing,Human Activities & Daily Life,1
+flower,Nature & Environment,1
+seeing new,Abstract Concepts & Events,1
+level,Abstract Concepts & Events,1
+boat,Technology & Media,1
+carrots,Food & Drink,1
+below,Abstract Concepts & Events,1
+dance,Sports & Physical Activities,1
+cardboard,Objects & Tools,1
+working,Human Activities & Daily Life,1
+ribbon,Objects & Tools,1
+chips,Food & Drink,1
+also,Abstract Concepts & Events,1
+national highway,Buildings & Spaces,1
+punching,Sports & Physical Activities,1
+letter opener,Objects & Tools,1
+cleaning,Human Activities & Daily Life,1
+spitting,Human Activities & Daily Life,1
+pencils,Objects & Tools,1
+swallow semen,Human Activities & Daily Life,1
+dancing,Sports & Physical Activities,1
+merchant,Society & Culture,1
+guard,Society & Culture,1
+excitement,Emotions & Mental States,1
+ball,Sports & Physical Activities,1
+ballpoint pen,Objects & Tools,1
+soldier,Society & Culture,1
+folding chair,Objects & Tools,1
+shopping,Human Activities & Daily Life,1
+condoms,Objects & Tools,1
+president,Society & Culture,1
+noble,Emotions & Mental States,1
+mess,Emotions & Mental States,1
+note,Objects & Tools,1
+gum,Food & Drink,1
+possible,Emotions & Mental States,1
+vacuum,Objects & Tools,1
+wheel,Objects & Tools,1
+learning about science,Abstract Concepts & Events,1
+tiger,Nature & Environment,1
+falling in love,Abstract Concepts & Events,1
+condo,Buildings & Spaces,1
+chief,Society & Culture,1
+tennis court,Sports & Physical Activities,1
+living room,Buildings & Spaces,1
+rotor,Technology & Media,1
+bar stool,Objects & Tools,1
+cards,Objects & Tools,1
+playing poker,Sports & Physical Activities,1
+saltshaker,Objects & Tools,1
+truth,Abstract Concepts & Events,1
+use television,Human Activities & Daily Life,1
+sideboard,Objects & Tools,1
+windshield,Technology & Media,1
+towel,Objects & Tools,1
+plain,Emotions & Mental States,1
+actors,Society & Culture,1
+flask,Objects & Tools,1
+yard,Nature & Environment,1
+dollar,Objects & Tools,1
+trees,Nature & Environment,1
+kosher deli,Food & Drink,1
+fireplace,Buildings & Spaces,1
+neuroepithelium,Abstract Concepts & Events,1
+world,Abstract Concepts & Events,1
+eating dinner,Human Activities & Daily Life,1
+radio,Technology & Media,1
+bass fiddle,Technology & Media,1
+motion,Abstract Concepts & Events,1
+jewelry,Objects & Tools,1
+pure,Emotions & Mental States,1
+winter,Nature & Environment,1
+spending money,Abstract Concepts & Events,1
+listen,Human Activities & Daily Life,1
+using computer,Human Activities & Daily Life,1
+little,Emotions & Mental States,1
+boundary,Abstract Concepts & Events,1
+eat breakfast,Human Activities & Daily Life,1
+committing suicide,Abstract Concepts & Events,1
+pen,Objects & Tools,1
+why,Abstract Concepts & Events,1
+oil,Food & Drink,1
+deliver,Human Activities & Daily Life,1
+ticket office,Buildings & Spaces,1
+go somewhere,Human Activities & Daily Life,1
+going to market,Human Activities & Daily Life,1
+storey,Buildings & Spaces,1
+lettuce,Food & Drink,1
+jumping rope,Sports & Physical Activities,1
+geese,Nature & Environment,1
+surf,Sports & Physical Activities,1
+post office,Buildings & Spaces,1
+discovering truth,Abstract Concepts & Events,1
+squirrel,Nature & Environment,1
+alcohol,Food & Drink,1
+going jogging,Human Activities & Daily Life,1
+town,Buildings & Spaces,1
+salesman,Society & Culture,1
+get in shape,Sports & Physical Activities,1
+bread,Food & Drink,1
+school cafeteria,Food & Drink,1
+blanket,Objects & Tools,1
+break,Abstract Concepts & Events,1
+entrance hall,Buildings & Spaces,1
+soccer field,Sports & Physical Activities,1
+chef,Society & Culture,1
+puppy,Nature & Environment,1
+shade,Nature & Environment,1
+cleaning house,Human Activities & Daily Life,1
+comets,Nature & Environment,1
+playing games,Human Activities & Daily Life,1
+terrace,Buildings & Spaces,1
+republic,Society & Culture,1
+bass clarinet,Technology & Media,1
+disk,Technology & Media,1
+examine thing,Human Activities & Daily Life,1
+adopt,Human Activities & Daily Life,1
+hunger,Emotions & Mental States,1
+cavity,Abstract Concepts & Events,1
+linen closet,Buildings & Spaces,1
+human beings,Society & Culture,1
+buildings,Buildings & Spaces,1
+lodgings,Buildings & Spaces,1
+projectile ball,Sports & Physical Activities,1
+machines,Technology & Media,1
+egg,Food & Drink,1
+proper,Emotions & Mental States,1
+squash court,Sports & Physical Activities,1
+nightclub,Buildings & Spaces,1
+pretend,Emotions & Mental States,1
+dead,Abstract Concepts & Events,1
+cars,Technology & Media,1
+alabama,Buildings & Spaces,1
+machine,Technology & Media,1
+ruler,Objects & Tools,1
+dark glasses,Objects & Tools,1
+learning,Abstract Concepts & Events,1
+agreeing with,Emotions & Mental States,1
+standing up,Sports & Physical Activities,1
+beam,Objects & Tools,1
+happiness,Emotions & Mental States,1
+quill,Objects & Tools,1
+buying,Human Activities & Daily Life,1
+trash,Objects & Tools,1
+tax,Abstract Concepts & Events,1
+awake,Emotions & Mental States,1
+oceans,Nature & Environment,1
+bladder,Abstract Concepts & Events,1
+gun,Objects & Tools,1
+cleaning clothes,Human Activities & Daily Life,1
+basement,Buildings & Spaces,1
+muscle,Sports & Physical Activities,1
+pit,Nature & Environment,1
+reply,Human Activities & Daily Life,1
+dining room,Buildings & Spaces,1
+runway,Buildings & Spaces,1
+diving,Sports & Physical Activities,1
+sloth,Nature & Environment,1
+watch film,Human Activities & Daily Life,1
+scale,Objects & Tools,1
+actor,Society & Culture,1
+immortality,Abstract Concepts & Events,1
+watching tv,Human Activities & Daily Life,1
+chewing food,Food & Drink,1
+keyboard instrument,Technology & Media,1
+leaf,Nature & Environment,1
+form,Abstract Concepts & Events,1
+read,Human Activities & Daily Life,1
+papers,Objects & Tools,1
+massive,Emotions & Mental States,1
+pollution,Nature & Environment,1
+fish,Nature & Environment,1
+glass,Objects & Tools,1
+game,Sports & Physical Activities,1
+travel,Human Activities & Daily Life,1
+entertainment,Technology & Media,1
+playing game,Sports & Physical Activities,1
+back,Abstract Concepts & Events,1
+broadcast studio,Technology & Media,1
+sports,Sports & Physical Activities,1
+parking structure,Buildings & Spaces,1
+danger,Abstract Concepts & Events,1
+back yard,Nature & Environment,1
+play chess,Sports & Physical Activities,1
+bum,Society & Culture,1
+dress,Objects & Tools,1
+memorize,Emotions & Mental States,1
+edge,Abstract Concepts & Events,1
+meat,Food & Drink,1
+mineral,Nature & Environment,1
+cashing in,Abstract Concepts & Events,1
+high prices,Abstract Concepts & Events,1
+forest,Nature & Environment,1
+horses,Nature & Environment,1
+party,Society & Culture,1
+expressing yourself,Human Activities & Daily Life,1
+printing on printer,Human Activities & Daily Life,1
+surface,Nature & Environment,1
+container,Objects & Tools,1
+see story,Abstract Concepts & Events,1
+dirty dishes,Food & Drink,1
+bureau,Objects & Tools,1
+check,Objects & Tools,1
+telephone,Technology & Media,1
+cake,Food & Drink,1
+doormat,Objects & Tools,1
+money,Objects & Tools,1
+first violin,Technology & Media,1
+getting drunk,Human Activities & Daily Life,1
+noise,Abstract Concepts & Events,1
+freeway,Buildings & Spaces,1
+hot,Emotions & Mental States,1
+play sports,Sports & Physical Activities,1
+regret,Emotions & Mental States,1
+castle,Buildings & Spaces,1
+read book,Human Activities & Daily Life,1
+clipboard,Objects & Tools,1
+kids,Society & Culture,1
+pawn,Sports & Physical Activities,1
+basketball,Sports & Physical Activities,1
+fate,Abstract Concepts & Events,1
+being hungry,Emotions & Mental States,1
+playing guitar,Human Activities & Daily Life,1
+vinyl,Objects & Tools,1
+something you,Human Activities & Daily Life,1
+reception area,Buildings & Spaces,1
+booze,Food & Drink,1
+drinking alcohol,Human Activities & Daily Life,1
+salt,Food & Drink,1
+cold,Emotions & Mental States,1
+lock,Objects & Tools,1
+fencing,Sports & Physical Activities,1
+fragile,Emotions & Mental States,1
+clever,Emotions & Mental States,1
+reading,Human Activities & Daily Life,1
+success,Abstract Concepts & Events,1
+postpone,Human Activities & Daily Life,1
+underground map,Objects & Tools,1
+rush,Emotions & Mental States,1
+wait turn,Human Activities & Daily Life,1
+reproduce,Abstract Concepts & Events,1
+chess set,Objects & Tools,1
+air conditioning,Technology & Media,1
+sailor,Society & Culture,1
+idiots,Society & Culture,1
+bigger,Emotions & Mental States,1
+aliens,Society & Culture,1
+drink,Food & Drink,1
+begin work,Human Activities & Daily Life,1
+feet,Sports & Physical Activities,1
+movie,Technology & Media,1
+take stand,Abstract Concepts & Events,1
+grooming,Human Activities & Daily Life,1
+runner,Sports & Physical Activities,1
+buy presents for others,Human Activities & Daily Life,1
+current,Abstract Concepts & Events,1
+teacher,Society & Culture,1
+card slot,Objects & Tools,1
+home,Buildings & Spaces,1
+steel cable,Objects & Tools,1
+farmers,Society & Culture,1
+penny,Objects & Tools,1
+illness,Abstract Concepts & Events,1
+pans,Objects & Tools,1
+get drunk,Human Activities & Daily Life,1
+subway stop,Buildings & Spaces,1
+illustrate point,Human Activities & Daily Life,1
+dime store,Buildings & Spaces,1
+greed,Emotions & Mental States,1
+hotel,Buildings & Spaces,1
+servant,Society & Culture,1
+canal,Buildings & Spaces,1
+washing clothes,Human Activities & Daily Life,1
+seafood restaurant,Food & Drink,1
+stars,Nature & Environment,1
+playing tennis,Sports & Physical Activities,1
+relaxing,Human Activities & Daily Life,1
+lazy,Emotions & Mental States,1
+paperwork,Objects & Tools,1
+cold storage,Buildings & Spaces,1
+platform,Buildings & Spaces,1
+round brush,Objects & Tools,1
+electrode,Technology & Media,1
+student,Society & Culture,1
+division,Abstract Concepts & Events,1
+fast food restaurant,Food & Drink,1
+marble,Nature & Environment,1
+linen,Objects & Tools,1
+creating art,Society & Culture,1
+clean clothes,Human Activities & Daily Life,1
+percussion instrument,Technology & Media,1
+playing ball,Sports & Physical Activities,1
+compete against,Sports & Physical Activities,1
+silk,Objects & Tools,1
+drawer,Objects & Tools,1
+central passage,Buildings & Spaces,1
+bus stop,Buildings & Spaces,1
+lemur,Nature & Environment,1
+steak,Food & Drink,1
+nerve,Abstract Concepts & Events,1
+shore,Nature & Environment,1
+holy,Abstract Concepts & Events,1
+smile,Emotions & Mental States,1
+monument,Buildings & Spaces,1
+ticket,Objects & Tools,1
+battle,Abstract Concepts & Events,1
+getting in line,Human Activities & Daily Life,1
+going somewhere,Human Activities & Daily Life,1
+have rest,Human Activities & Daily Life,1
+fishing,Sports & Physical Activities,1
+maps,Objects & Tools,1
+steel pen,Objects & Tools,1
+story,Abstract Concepts & Events,1
+trumpet,Technology & Media,1
+gong,Technology & Media,1
+mailbox,Objects & Tools,1
+ham,Food & Drink,1
+running errands,Human Activities & Daily Life,1
+lying,Emotions & Mental States,1
+leader,Society & Culture,1
+corner shop,Buildings & Spaces,1
+toy car,Objects & Tools,1
+rod,Objects & Tools,1
+gambler,Society & Culture,1
+ridiculous,Emotions & Mental States,1
+pencil sharpener,Objects & Tools,1
+desk,Objects & Tools,1
+procreate,Abstract Concepts & Events,1
+playing soccer,Sports & Physical Activities,1
+advertisement,Technology & Media,1
+main artery,Buildings & Spaces,1
+rule,Abstract Concepts & Events,1
+nails,Objects & Tools,1
+eat vegetables,Human Activities & Daily Life,1
+thick,Emotions & Mental States,1
+violin,Technology & Media,1
+train station,Buildings & Spaces,1
+rocks,Nature & Environment,1
+statue,Buildings & Spaces,1
+trouble,Abstract Concepts & Events,1
+paint,Objects & Tools,1
+drop of blood,Abstract Concepts & Events,1
+heat,Nature & Environment,1
+pillow case,Objects & Tools,1
+clavichord,Technology & Media,1
+take bus,Human Activities & Daily Life,1
+farmer,Society & Culture,1
+hair,Objects & Tools,1
+play poker,Sports & Physical Activities,1
+celebrating,Human Activities & Daily Life,1
+film,Technology & Media,1
+sunshine,Nature & Environment,1
+reception,Buildings & Spaces,1
+sitting down,Sports & Physical Activities,1
+neighbour,Society & Culture,1
+have food,Food & Drink,1
+meeting friend,Human Activities & Daily Life,1
+loose,Emotions & Mental States,1
+expressway,Buildings & Spaces,1
+alto,Technology & Media,1
+undergraduate,Society & Culture,1
+literature,Society & Culture,1
+keyboard,Technology & Media,1
+smooth,Emotions & Mental States,1
+darkness,Emotions & Mental States,1
+play,Sports & Physical Activities,1
+date,Abstract Concepts & Events,1
+adult,Society & Culture,1
+sale,Abstract Concepts & Events,1
+dream,Abstract Concepts & Events,1
+candle,Objects & Tools,1
+bookcase,Objects & Tools,1
+star,Nature & Environment,1
+cornet,Technology & Media,1
+fabric,Objects & Tools,1
+want,Emotions & Mental States,1
+traveller,Society & Culture,1
+toll road,Buildings & Spaces,1
+affair,Abstract Concepts & Events,1
+clock,Objects & Tools,1
+ice,Food & Drink,1
+dishes,Food & Drink,1
+moss,Nature & Environment,1
+toy soldier,Objects & Tools,1
+plane ticket,Objects & Tools,1
+river,Nature & Environment,1
+dining area,Buildings & Spaces,1
+playing football,Sports & Physical Activities,1
+paper clips,Objects & Tools,1
+eating breakfast in bed,Human Activities & Daily Life,1
+hinged door,Objects & Tools,1
+reception desk,Buildings & Spaces,1
+name,Abstract Concepts & Events,1
+policemen,Society & Culture,1
+ambition,Abstract Concepts & Events,1
+top floor,Buildings & Spaces,1
+coins,Objects & Tools,1
+clouds,Nature & Environment,1
+jogging,Sports & Physical Activities,1
+disability,Abstract Concepts & Events,1
+theory,Abstract Concepts & Events,1
+food can,Food & Drink,1
+rug,Objects & Tools,1
+anything,Abstract Concepts & Events,1
+arise,Abstract Concepts & Events,1
+opening business,Abstract Concepts & Events,1
+piano,Technology & Media,1
+empire state building,Buildings & Spaces,1
+body,Abstract Concepts & Events,1
+row house,Buildings & Spaces,1
+saw,Objects & Tools,1
+question,Abstract Concepts & Events,1
+college,Society & Culture,1
+change,Abstract Concepts & Events,1
+goods,Abstract Concepts & Events,1
+suitcase,Objects & Tools,1
+beaver,Nature & Environment,1
+going public,Abstract Concepts & Events,1
+beauty salon,Buildings & Spaces,1
+christmas,Society & Culture,1
+must,Abstract Concepts & Events,1
+shock,Emotions & Mental States,1
+meet friend,Human Activities & Daily Life,1
+net,Sports & Physical Activities,1
+cable,Objects & Tools,1
+watching television,Human Activities & Daily Life,1
