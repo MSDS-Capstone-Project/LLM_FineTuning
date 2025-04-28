@@ -52,7 +52,7 @@ These findings suggest that PEFT methods can meaningfully strengthen specific re
 \section{Introduction}
 \label{sec:intro}
 
-The release of ChatGPT in 2023 brought about a wave of LLM advancements that have seemed to follow a trend: bigger is better. Almost every month, a new proprietary model is released with more parameters and purportedly better performance than any model before it. However, as these top-of-the-line models have gotten more advanced, they have continued to become more expensive to train and use. 
+\indent The release of ChatGPT in late 2022 brought about a wave of LLM advancements that have seemed to follow a trend: bigger is better. Almost every month, a new proprietary model is released with more parameters and purportedly better performance than any model before it. However, as these top-of-the-line models have gotten more advanced, they have continued to become more expensive to train and use. 
 
 Current approaches often involve training ever-larger models using massive datasets and computational resources. However, this brute-force strategy raises practical concerns about scalability, accessibility, and interpretability. Fine-tuning such large models from scratch is increasingly impractical, especially for smaller research groups or applications that need specialized adaptation.
 
@@ -64,6 +64,7 @@ Our primary objectives are threefold:
 \begin{itemize}
     \item Assess whether PEFT methods can inject common sense reasoning capabilities into a basic LLM.
     \item Compare the effectiveness of different PEFT strategies (LoRA, Prefix Tuning, IA3, and QLoRA) in improving model performance.
+    \item Understand how different types of reparametrization and adaptive techniques affect different cognitive abilities of the LLM Transformer Architecture.
     \item Reflect on the broader implications of modular training approaches for LLM research and general use.
 \end{itemize}
 
@@ -84,20 +85,24 @@ The development of efficient fine-tuning strategies for Large Language Models (L
 
 \textbf{IA3 (Input-Adaptive Attention)} \cite{Liu2022} extended these ideas by learning input-dependent scaling factors inside the attention and feedforward modules. IA3 showed particular promise for few-shot fine-tuning, achieving competitive results with significantly fewer trainable parameters.
 
-Most prior work evaluated PEFT techniques on instruction-following, summarization, or dialogue tasks. However, their application to \textit{commonsense reasoning}—a core component of AGI—remains underexplored. Our project contributes by systematically comparing these PEFT methods on the CommonsenseQA benchmark, focusing on the ability to teach implicit world knowledge to a relatively small model like GPT-2.
+Most prior work evaluated PEFT techniques on instruction-following, summarization, or dialogue tasks. However, their application to \textit{commonsense reasoning} which is a core component of AGI remains rather underexplored. Our project contributes by systematically comparing these PEFT methods on the CommonsenseQA benchmark, focusing on the ability to teach implicit world knowledge to a relatively small model like GPT-2.
 
 
 
 \section{Methodology}
 \label{sec:methodology}
-Explain data, model(s), approach, and experimental setup.
+In this section we will discuss our approach to experiment with different PEFT methods for our finalized Dataset.
 
 \subsection{Data: CommonsenseQA}
 Our initial experiments aimed to fine-tune GPT-2 on the OpenMathInstruct-2 dataset for mathematical reasoning. However, due to GPT-2's limited capacity to understand complex symbolic structures, training stalled at a high loss value of 6.6 without notable accuracy improvements.
 
-Recognizing the mismatch between task complexity and model capacity, we pivoted to \textbf{CommonsenseQA}, a multiple-choice question-answering dataset focused on everyday commonsense knowledge. Each sample in CommonsenseQA consists of a question and four candidate answers, with exactly one correct choice. The dataset is designed to challenge models on reasoning about implicit world knowledge rather than relying purely on surface-level patterns, making it a suitable benchmark for our objectives.
+We did not want to move to a larger model like Mistral 6B Instruct Model because we wanted to test the capabilities of PEFT methods in a very basic GPT like GPT-2 and not have any beneficiary aspects of having a larger model.
 
-\subsection{Model: GPT-2}
+Recognizing the mismatch between task complexity and model capacity, we pivoted to \textbf{CommonsenseQA}, a multiple-choice question-answering dataset focused on everyday commonsense knowledge. Each sample in CommonsenseQA consists of a question and five candidate answers, with exactly one correct choice. The dataset is designed to challenge models on reasoning about implicit world knowledge rather than relying purely on surface-level patterns, making it a suitable benchmark for our objectives.
+
+The dataset also has 785 categories of these common sense questions. We clustered these categories into a larger set of 10 broad classes for a better grasp of the classes.
+
+\subsection{Model: GPT-2 with PEFTs}
 We selected the \textbf{GPT-2 small} model (approximately 125M parameters) as our base architecture. GPT-2's autoregressive nature makes it naturally effective at next-word prediction, which aligns well with the multiple-choice format where short, precise outputs are expected. Additionally, GPT-2's manageable size allowed us to conduct multiple fine-tuning experiments within reasonable compute constraints.
 
 \subsection{Parameter Efficient Fine-Tuning Techniques}
@@ -109,6 +114,13 @@ We applied and compared four different PEFT methods:
     \item \textbf{QLoRA}: Combines 4-bit model quantization with LoRA to enable memory-efficient fine-tuning.
 \end{itemize}
 Each method adapts only a small fraction of the total model parameters, keeping the core model weights frozen.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{../graphs/PEFTs.png}
+\caption{Intuitive Visualization of the different target regions for each PEFT Method}
+\label{fig:peft-target}
+\end{figure}
 
 \subsection{Experimental Setup}
 We trained all models using a single NVIDIA A100 GPU, leveraging the HuggingFace PEFT library for efficient implementations. Hyperparameters were held consistent across experiments for fair comparison:
@@ -122,40 +134,36 @@ We trained all models using a single NVIDIA A100 GPU, leveraging the HuggingFace
 
 Evaluation was conducted using two primary metrics:
 \begin{itemize}
-    \item \textbf{Validation Accuracy}: Percentage of correct answers selected.
+    \item \textbf{Validation Accuracy}: Percentage of correct answers selected. We also calculated this accuracy within the broad classes of questions to understand each method's expertise in specific types of common sense.
     \item \textbf{Perplexity}: A measure of model confidence on validation sequences.
 \end{itemize}
 
 To simulate realistic low-resource settings, we limited training to small-to-moderate compute budgets, avoiding large-scale hyperparameter searches.
 
 
-
-
-
 \section{Experiments and Results}
 \label{sec:experiments}
-Present quantitative and qualitative findings. Use figures/tables if needed.
 
-\subsection{Initial Attempts: OpenMathInstruct-2}
-Our original experiments with OpenMathInstruct-2 revealed a fundamental mismatch between GPT-2’s architecture and mathematical reasoning tasks. Despite extensive training, the model’s training loss plateaued around 6.6, with negligible improvements in prediction accuracy. This indicated that the complexity and symbolic density of math datasets overwhelmed the representational limits of GPT-2.
+\subsection{Initial Exploration: OpenMathInstruct-2}
+Our early experiments on the OpenMathInstruct-2 dataset exposed a fundamental mismatch between GPT-2’s architecture and the demands of mathematical reasoning. Despite extensive training, the model's loss plateaued at approximately 6.6, with minimal improvements in prediction accuracy. This stagnation suggested that the symbolic complexity and structured reasoning required by math datasets exceeded GPT-2’s representational capacity.
 
-\subsection{Pivot to CommonsenseQA}
-Recognizing these challenges, we shifted to the CommonsenseQA dataset, which required shorter, sentence-level reasoning better aligned with GPT-2’s capabilities. Commonsense tasks allowed us to better assess the effectiveness of PEFT techniques without being bottlenecked by inherent architectural limitations.
+\subsection{Strategic Pivot: CommonsenseQA}
+Recognizing these limitations, we transitioned to the CommonsenseQA dataset, which emphasizes sentence-level, everyday reasoning—better suited to GPT-2's strengths. This shift allowed us to more accurately assess the effectiveness of parameter-efficient fine-tuning (PEFT) methods without architectural bottlenecks dominating outcomes.
 
-\subsection{Zero-Shot Baseline}
-GPT-2's zero-shot performance on CommonsenseQA was near random, achieving approximately 25\% accuracy, as expected for a four-option multiple-choice task. This baseline highlighted the necessity of fine-tuning.
+\subsection{Zero-Shot Baseline Performance}
+Without fine-tuning, GPT-2’s zero-shot accuracy on CommonsenseQA was close to random, at roughly 6.35\%—consistent with a four-choice multiple-selection task. This established a clear need for targeted fine-tuning.
 
-\subsection{Fine-Tuning Results}
-We applied four PEFT techniques and observed the following validation accuracies:
+\subsection{Fine-Tuning Outcomes}
+We applied four PEFT strategies and recorded the following validation accuracies:
 
 \begin{table}[h]
 \centering
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{|l|c|}
 \hline
-\textbf{Fine-Tuning Method} & \textbf{Validation Accuracy (\%)} \\
+\textbf{Method} & \textbf{Validation Accuracy (\%)} \\
 \hline
-Zero-Shot (No Fine-Tuning) & 0.5\% \\
+Zero-Shot (1.5b)& 6.35\%\\
 LoRA & 12\% \\
 QLoRA & 15\% \\
 Prefix Tuning & 46\% \\
@@ -166,32 +174,89 @@ IA3 & 50\% \\
 \label{table:validation-accuracy}
 \end{table}
 
-\subsection{Perplexity Analysis}
-In addition to accuracy, we tracked perplexity on the validation set as a measure of prediction confidence. Models fine-tuned with IA3 and Prefix Tuning showed a significant drop in perplexity compared to LoRA and QLoRA, aligning with their superior accuracy.
+Prefix Tuning and IA3 clearly outperformed LoRA and QLoRA, achieving near 50\% accuracy and all 4 PEFT methods outperformed the largest available GPT-2 model.
+
+\subsection{Training and Validation Loss Dynamics}
+We monitored the training and validation losses to better understand convergence behaviors for each PEFT method.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.45\textwidth]{perplexity_trend_placeholder.png}
-\caption{Training and validation perplexity trends for different PEFT methods (placeholder figure).}
-\label{fig:perplexity-trends}
+\includegraphics[width=0.5\textwidth]{../graphs/LoRA.png}
+\caption{Training and validation loss curves for LoRA fine-tuning.}
+\label{fig:lora-loss}
 \end{figure}
 
-(Note: Actual perplexity trend plots can be generated and inserted if available.)
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{../graphs/QLoRA.png}
+\caption{Training and validation loss curves for QLoRA fine-tuning.}
+\label{fig:qlora-loss}
+\end{figure}
 
-\subsection{Qualitative Observations}
-Qualitatively, models fine-tuned with IA3 and Prefix Tuning demonstrated a stronger ability to infer implicit relationships between concepts, often selecting reasonable answers even when phrasing was ambiguous. In contrast, LoRA- and QLoRA-fine-tuned models exhibited behaviors closer to random guessing, suggesting weaker internalization of commonsense reasoning patterns.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{../graphs/Prefix.png}
+\caption{Training and validation loss curves for Prefix Tuning fine-tuning.}
+\label{fig:prefix-loss}
+\end{figure}
 
-\subsection{Summary}
-Overall, our experiments indicate that IA3 and Prefix Tuning are highly effective at improving commonsense capabilities in GPT-2 under limited resource settings. LoRA and QLoRA, while efficient in other contexts, struggled to produce meaningful gains in this domain.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{../graphs/IA3.png}
+\caption{Training and validation loss curves for IA3 fine-tuning.}
+\label{fig:ia3-loss}
+\end{figure}
+
+Consistently, IA3 and Prefix Tuning converged faster and to lower final validation losses compared to LoRA and QLoRA, mirroring their superior accuracies.
+
+\subsection{Perplexity Analysis}
+
+Although CommonsenseQA is a classification task, we also measured perplexity after fine-tuning to assess general model calibration. Table~\ref{table:perplexity-accuracy} summarizes the results.
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Method} & \textbf{Perplexity}\\
+\hline
+Zero Shot & 5536.87\\
+LoRA & 14.31 \\
+QLoRA & 14.45\\
+Prefix Tuning & 14.06\\
+IA3 & 16.24\\
+\hline
+\end{tabular}
+\caption{Perplexity and validation accuracy across PEFT methods on CommonsenseQA.}
+\label{table:perplexity-accuracy}
+\end{table}
+
+Interestingly, perplexity values across PEFT methods were relatively close and did not correlate strongly with classification accuracy. For instance, IA3 achieved higher accuracy despite having a higher perplexity than LoRA and QLoRA. This suggests that perplexity alone is not a reliable indicator of multiple-choice reasoning performance in this setting.
+
+\subsection{Category-Wise Analysis}
+To further probe model behavior, we evaluated category-specific performance across commonsense reasoning types within CommonsenseQA.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{../graphs/Categorical_Performance.png}
+\caption{Validation accuracy by commonsense category across PEFT methods.}
+\label{fig:category-accuracy}
+\end{figure}
+
+IA3 and Prefix Tuning consistently led across multiple categories, with especially strong gains in social and temporal reasoning.
+
+\subsection{Qualitative Assessment}
+Qualitatively, IA3- and Prefix-fine-tuned models showed a stronger grasp of implicit relationships between concepts, often selecting plausible answers even when questions were phrased ambiguously. In contrast, LoRA- and QLoRA-fine-tuned models behaved closer to random guessing, suggesting weaker internalization of commonsense structures.
+
+\subsection{Summary of Findings}
+Overall, our experiments demonstrate that \textbf{IA3 and Prefix Tuning are highly effective} for enhancing commonsense reasoning in GPT-2 under resource constraints. While \textbf{LoRA and QLoRA} remain efficient in other contexts, they struggled to deliver meaningful improvements on CommonsenseQA.
+
 
 
 
 \section{Discussion}
 \label{sec:discussion}
-Interpret results, highlight limitations, analyze interesting points.
-
-
-Our results show that Parameter-Efficient Fine-Tuning (PEFT) methods can meaningfully improve the commonsense reasoning capabilities of smaller language models like GPT-2, but their effectiveness varies significantly across techniques.
+Our results show that Parameter-Efficient Fine-Tuning (PEFT) methods can significantly improve the commonsense reasoning capabilities of smaller language models like GPT-2, but their effectiveness varies significantly across techniques.
 
 \subsection{Interpretation of Results}
 IA3 and Prefix Tuning were substantially more effective than LoRA and QLoRA. We hypothesize that this is because IA3 and Prefix Tuning directly intervene in the model’s attention mechanisms, which are central to relational and inferential reasoning. By contrast, LoRA and QLoRA mainly inject low-rank updates into the projection layers, which may be less effective at reshaping internal reasoning processes necessary for commonsense tasks.
