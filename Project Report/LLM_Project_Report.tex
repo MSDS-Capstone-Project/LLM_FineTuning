@@ -5,6 +5,8 @@
 \usepackage{amsmath,amssymb}
 \usepackage{hyperref}
 \usepackage{natbib}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{sources.bib}
 
 \newcommand{\coursefootnote}{
   \renewcommand{\thefootnote}{\fnsymbol{footnote}}
@@ -67,8 +69,11 @@ Our primary objectives are threefold:
 
 By studying how small, controlled updates can meaningfully improve commonsense reasoning, we hope to gain insights into how structured cognitive skills might be cultivated in language models without the need for massive retraining or scaling alone.
 
+
+
 \section{Related works}
 \label{sec:background}
+
 The development of efficient fine-tuning strategies for Large Language Models (LLMs) has been an active area of research, particularly as model sizes and training costs continue to grow.
 
 \textbf{A Critical Review of PEFT} \cite{Xu2023} covered the history of parameter-efficient fine-tuning techniques, their applications, and future direction for LLM training and tuning. The use of PEFT seems to improve parameter efficiency and reduce computational requirements.
@@ -80,6 +85,8 @@ The development of efficient fine-tuning strategies for Large Language Models (L
 \textbf{IA3 (Input-Adaptive Attention)} \cite{Liu2022} extended these ideas by learning input-dependent scaling factors inside the attention and feedforward modules. IA3 showed particular promise for few-shot fine-tuning, achieving competitive results with significantly fewer trainable parameters.
 
 Most prior work evaluated PEFT techniques on instruction-following, summarization, or dialogue tasks. However, their application to \textit{commonsense reasoning}—a core component of AGI—remains underexplored. Our project contributes by systematically comparing these PEFT methods on the CommonsenseQA benchmark, focusing on the ability to teach implicit world knowledge to a relatively small model like GPT-2.
+
+
 
 \section{Methodology}
 \label{sec:methodology}
@@ -209,8 +216,6 @@ These insights reinforce the view that small, targeted interventions inside the 
 
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
-Summarize contributions and propose next steps.
-
 We demonstrated that Parameter-Efficient Fine-Tuning methods significantly improve GPT-2's performance on commonsense reasoning without full model retraining. In the future, we aim to:
 \begin{itemize}
     \item Explore more advanced PEFT techniques.
@@ -221,13 +226,10 @@ We demonstrated that Parameter-Efficient Fine-Tuning methods significantly impro
 
 
 
-\bibliographystyle{plainnat}
-\begin{thebibliography}{99}
-\bibitem{some-key-2023}
-  Author, A. (2023).
-  \textit{Title of the reference or paper.}
-  Journal or Conference Name, pages, or URL.
-\end{thebibliography}
+\printbibliography[
+heading=bibintoc,
+title={Whole bibliography}
+]
 
 \appendix
 \section{Appendix (Optional)}
