@@ -1,0 +1,64 @@
+\documentclass[11pt,twocolumn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{natbib}
+\newcommand{\coursefootnote}{
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[1]{Course Project for DS-6051 -- Decoding Large Language Models.}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+}
+\title{
+\textbf{TITLE OF YOUR REPORT}
+}
+\author{
+Student Name \\
+University/Department \\
+\texttt{email@domain.edu}
+}
+\date{}
+\begin{document}
+\maketitle
+\coursefootnote % This inserts the footnote exactly once
+\begin{abstract}
+A concise summary (150--300 words) of the problem, methods, and key results.
+\end{abstract}
+\section{Introduction}
+\label{sec:intro}
+Provide the context, motivation, and main objectives.
+\section{Related works}
+\label{sec:background}
+Summarize background. Highlight key papers and how they relate to your work.
+\section{Methodology}
+\label{sec:methodology}
+Explain data, model(s), approach, and experimental setup.
+\section{Experiments and Results}
+\label{sec:experiments}
+Present quantitative and qualitative findings. Use figures/tables if needed.
+\section{Discussion}
+\label{sec:discussion}
+Interpret results, highlight limitations, analyze interesting points.
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+Summarize contributions and propose next steps.
+\bibliographystyle{plainnat}
+\begin{thebibliography}{99}
+\bibitem{some-key-2023}
+Author, A. (2023).
+\textit{Title of the reference or paper.}
+Journal or Conference Name, pages, or URL.
+\end{thebibliography}
+\appendix
+\section{Appendix (Optional)}
+Extra details, code snippets, extended tables or figures.
+\end{document}\bibliographystyle{plainnat}
+\begin{thebibliography}{99}
+\bibitem{some-key-2023}
+Author, A. (2023).
+\textit{Title of the reference or paper.}
+Journal or Conference Name, pages, or URL.
+\end{thebibliography}
+\appendix
+\section{Appendix (Optional)}
+Extra details, code snippets, extended tables or figures.
